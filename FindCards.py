@@ -8,6 +8,13 @@ class FindCards:
     def __init__(self, bot):
         self.bot = bot
 
+	
+    @commands.command()
+    async def mycom(self):
+        """This does stuff!"""
+
+        await self.bot.say("Yay!")	
+		
 	@commands.command(pass_context=True)
     async def on_message(self, message):
         """Build a Scryfall Query"""
