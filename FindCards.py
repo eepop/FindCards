@@ -9,7 +9,7 @@ class FindCards:
         self.bot = bot
 
 	@commands.group(no_pm=True, invoke_without_command=True, pass_context=True)
-    async def FindCards(self, ctx, *, message):
+    async def on_message(self, ctx, *, message):
         """Build a Scryfall Query"""
         author = ctx.message.author
         channel = ctx.message.channel	
